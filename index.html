@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Academia Divina Providencia</title>
+	<style>
+		html{
+			height: 100%;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			background: linear-gradient(#141e30, #243b55);
+		}
+		.contenedor{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 400px;
+			padding: 40px;
+			transform: translate(-50%, -50%);
+			background: rgba(0, 0, 0,.5);
+			box-sizing: border-box;
+			box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+			border-radius: 10px;
+		}
+		.contenedor h2{
+			margin: 0 0 30px;
+			padding: 0;
+			color: white;
+			text-align: center;
+		}
+		.contenedor .usuario{
+			position: relative;
+		}
+		.contenedor .usuario input{
+			width: 100%;
+			padding: 10 px 0;
+			font-size: 16px;
+			color: white;
+			margin-bottom: 30px;
+			border: none;
+			border-bottom: 1px solid #FFF;
+			outline: none;
+			background: transparent;
+		}
+		.contenedor .usuario label{
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 10px 0;
+			font-size: 16px;
+			color: white;
+			pointer-events: none;
+			transition: .5s;
+		}
+		.contenedor .usuario input:focus ~ label,
+		.contenedor .usuario input:valid ~ label{
+			top: -20px;
+			left: 0;
+			color: #03E9F4;
+			font-size: 12px;
+		}
+		.contenedor form a{
+			position: relative;
+			display: inline-block;
+			padding: 10px 20px;
+			color: #03E9F4;
+			font-size: 16px;
+			text-decoration: none;
+			text-transform: uppercase;
+			overflow: hidden;
+			transition: .5s;
+			margin-top: 40px;
+			letter-spacing: 4px;
+		}
+		.contenedor a:hover{
+			background: #03E9F4;
+			color: white;
+			border-radius: 5px;
+			box-shadow: 0 0 5px #03E9F4,
+						0 0 25px #03E9F4,
+						0 0 50px #03E9F4,
+						0 0 100px #03E9F4;
+		}
+		.contenedor a span{
+			position: absolute;
+			display: block;
+		}
+		.contenedor a span:nth-child(1){
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 2px;
+			background: linear-gradient(90deg, transparent, #03E9F4);
+			animation: btn-animl ls linear infinite;
+		}
+		
+
+</style>
+</head>
+<body>
+	<div class="contenedor">
+		<h2>Divina Providencia</h2>
+		<form action="">
+			<div class="usuario">
+				<input type="text" required>
+				<label>Correo</label>
+				
+			</div>
+			<div class="usuario">
+				<input type="password" required>
+				<label>Contraseña</label>
+				
+			</div>
+			<a href="">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				Iniciar
+		</form>
+		
+	</div>
+
+</body>
+</html>
